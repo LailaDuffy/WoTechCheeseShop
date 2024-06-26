@@ -1,22 +1,12 @@
 import java.util.ArrayList;
 
 public class Customer {
-    private String name;
     private Wallet wallet;
     private ArrayList<Cheese> myCheeses;
 
-    public Customer(String name, Wallet wallet, ArrayList<Cheese> myCheeses) {
-        this.name = name;
+    public Customer(Wallet wallet, ArrayList<Cheese> myCheeses) {
         this.wallet = wallet;
         this.myCheeses = myCheeses;
-    }
-
-    public String getName() {
-        return name;
-    }
-
-    public void setName(String name) {
-        this.name = name;
     }
 
     public Wallet getWallet() {

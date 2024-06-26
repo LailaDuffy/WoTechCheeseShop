@@ -8,9 +8,11 @@ public class Cheese {
     private double price;
     private Date expiryDate;
 
-    public Cheese(int id, String name) {
+    public Cheese(int id, String name, String type, double price) {
         this.id = id;
         this.name = name;
+        this.type = type;
+        this.price = price;
         this.expiryDate = setExpiryDate();
     }
 

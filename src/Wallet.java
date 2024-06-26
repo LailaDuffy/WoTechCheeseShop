@@ -23,12 +23,8 @@ public class Wallet {
         this.name = name;
     }
 
-    public double buy(double price) {
-        if (balance >= price) {
-            return balance -= price;
-        } else {
-           return getBalance();
-        }
+    public void buy(double price) {
+        balance -= price;
     }
 
     public void addBalance(double amount) {

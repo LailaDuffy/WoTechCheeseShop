@@ -33,7 +33,7 @@ public class CheeseShop {
     }
 
     public void removeCheeseFromCart(Cheese cheese) {
-        cart.add(cheese);
+        cart.remove(cheese);
     }
 
     public double totalCart() {
